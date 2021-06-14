@@ -1,0 +1,38 @@
+.icon {
+  width: 150px;
+  height: 40px;
+}
+.row {
+  margin: 20px;
+  display: flex;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.imgListContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.movieTtile {
+  font-size: large;
+}
+.label {
+  font-size: large;
+}
+.actionButton {
+  visibility: hidden;
+  background-color: red;
+  color: white;
+  border: none;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  align-self: center;
+  margin-top: -55px;
+}
+.imgListContainer:hover .actionButton {
+  visibility: visible;
+}

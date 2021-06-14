@@ -1,8 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
+
+import movieListReducer from "../features/movieList/MovieListSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    movieList: movieListReducer,
   },
+  middleware: getDefaultMiddleware({
+    serializableCheck: false,
+  }),
 });
